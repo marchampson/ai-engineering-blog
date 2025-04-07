@@ -1,64 +1,67 @@
-baseURL: "https://marchampson.me/"
-title: "AI Engineering Insights"
-paginate: 5
-theme: PaperMod
+baseURL = "https://marchampson.me/"
+title = "AI Engineering Insights"
+paginate = 5
+theme = "PaperMod"
+languageCode = "en-gb"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
-languageCode: "en-gb"
-defaultContentLanguage: "en"
+[minify]
+  disableXML = true
+  minifyOutput = true
 
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+[params]
+  env = "production"
+  title = "AI Engineering Insights"
+  description = "Exploring the evolution of software development in the age of AI"
+  keywords = ["AI", "Software Engineering", "Machine Learning", "LLMs"]
+  author = "Marc Hampson"
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
 
-minify:
-  disableXML: true
-  minifyOutput: true
+[params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
 
-params:
-  env: production
-  title: AI Engineering Insights
-  description: "Exploring the evolution of software development in the age of AI"
-  keywords: [AI, Software Engineering, Machine Learning, LLMs]
-  author: Marc Hampson
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: true
-  tocopen: false
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/marc-hampson-4a86281/"
 
-  assets:
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/marchampson"
 
-  socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/marc-hampson-4a86281/"
-    - name: github
-      url: "https://github.com/marchampson"
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 10
 
-menu:
-  main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 30
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 30
