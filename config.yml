@@ -3,6 +3,9 @@ title: "AI Engineering Insights"
 paginate: 5
 theme: PaperMod
 
+languageCode: "en-gb"
+defaultContentLanguage: "en"
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
