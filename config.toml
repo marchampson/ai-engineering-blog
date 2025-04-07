@@ -40,13 +40,13 @@ buildExpired = false
   favicon32x32 = "/favicon-32x32.png"
   apple_touch_icon = "/apple-touch-icon.png"
 
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/marc-hampson-4a86281/"
+#[[params.socialIcons]]
+#  name = "linkedin"
+#  url = "https://www.linkedin.com/in/marc-hampson-4a86281/"
 
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/marchampson"
+#[[params.socialIcons]]
+#  name = "github"
+#  url = "https://github.com/marchampson"
 
 [[menu.main]]
   identifier = "categories"
