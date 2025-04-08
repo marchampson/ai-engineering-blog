@@ -1,6 +1,6 @@
 ---
 title: "AI Fundamentals: Core Concepts Every Developer Needs to Know"
-date: 2025-04-08
+date: 2025-04-09
 draft: false
 tags: ["AI", "Machine Learning", "Neural Networks", "NLP", "Computer Vision"]
 categories: ["AI Concepts"]
@@ -14,7 +14,7 @@ categories: ["AI Concepts"]
 - Discover practical integration patterns for AI in traditional software development
 - See how AI is transforming the role and skill set of developers
 
-As developers, we're witnessing a fundamental shift in how software is created and what it can accomplish. From the rise of mobile to the cloud and containerization, we've seen many technological waves—but none as transformative as the current AI revolution.
+As developers, we're witnessing a fundamental shift in how software is created and what it can accomplish. From the rise of mobile to the cloud and containerisation, we've seen many technological waves—but none as transformative as the current AI revolution.
 
 This post breaks down the essential AI concepts every developer should know—whether you're building AI systems or simply integrating them.
 
@@ -24,7 +24,7 @@ This post breaks down the essential AI concepts every developer should know—wh
 
 At its core, artificial intelligence simulates human intelligence using machines. But this broad definition covers a spectrum of capabilities.
 
-AI can be classified into three broad types. Most of what we interact with today falls under **Narrow AI**, which is designed to perform specific tasks like recognizing images or recommending movies. In contrast, **General AI** aims to replicate human cognitive abilities across domains—something that remains largely theoretical. **Superintelligence**, often discussed in speculative fiction and academic debate, refers to systems that far surpass human intelligence, raising questions about control, safety, and ethics.
+AI can be classified into three broad types. Most of what we interact with today falls under **Narrow AI**, which is designed to perform specific tasks like recognising images or recommending films. In contrast, **General AI** aims to replicate human cognitive abilities across domains—something that remains largely theoretical. **Superintelligence**, often discussed in speculative fiction and academic debate, refers to systems that far surpass human intelligence, raising questions about control, safety, and ethics.
 
 AI has evolved through several paradigms. Early approaches relied on **rule-based systems**, which used predefined logic such as "if this, then that". These were deterministic and explainable but struggled with flexibility. The next shift came with **machine learning**, where systems learn patterns from data and essentially write their own rules. Then came **deep learning**, a powerful subset of ML that uses multi-layered neural networks to automatically learn high-level features from raw input.
 
@@ -36,19 +36,19 @@ Machine learning powers most of today's AI. To understand it, consider how human
 
 To make predictions, models rely on **features** (the input variables) and **labels** (the expected outcomes). For example, in predicting house prices, features might include square footage and location, while the label is the final sale price. Engineering these features thoughtfully can significantly boost accuracy.
 
-Machine learning comes in different flavors. **Supervised learning** uses labeled data to teach the model, useful for tasks like spam detection or price prediction. **Unsupervised learning** doesn't use labels and instead finds hidden patterns—like clustering customers into groups. Then there's **reinforcement learning**, where an agent learns by interacting with its environment, receiving rewards or penalties based on actions—perfect for game-playing AIs or robotic control systems.
+Machine learning comes in different flavours. **Supervised learning** uses labelled data to teach the model, useful for tasks like spam detection or price prediction. **Unsupervised learning** doesn't use labels and instead finds hidden patterns—like clustering customers into groups. Then there's **reinforcement learning**, where an agent learns by interacting with its environment, receiving rewards or penalties based on actions—perfect for game-playing AIs or robotic control systems.
 
-Evaluating a model involves more than just checking if it works. Developers must split data into training, validation, and test sets to ensure generalization. Metrics like **accuracy**, **precision**, and **recall** help quantify performance, while vigilance is needed to avoid pitfalls like **overfitting** (too specific to the training data) or **underfitting** (failing to capture important patterns).
+Evaluating a model involves more than just checking if it works. Developers must split data into training, validation, and test sets to ensure generalisation. Metrics like **accuracy**, **precision**, and **recall** help quantify performance, while vigilance is needed to avoid pitfalls like **overfitting** (too specific to the training data) or **underfitting** (failing to capture important patterns).
 
 ---
 
 ## Neural Networks and Deep Learning
 
-Neural networks are modeled loosely on how neurons in the brain connect. They consist of layers: an input layer that receives the data, hidden layers that transform it, and an output layer that produces the result. Each connection has a **weight**, and each node has a **bias**—together these are adjusted during training to improve performance.
+Neural networks are modelled loosely on how neurons in the brain connect. They consist of layers: an input layer that receives the data, hidden layers that transform it, and an output layer that produces the result. Each connection has a **weight**, and each node has a **bias**—together these are adjusted during training to improve performance.
 
-What makes these networks powerful are **activation functions**, which introduce non-linear transformations and help capture complex relationships in data. The system uses **loss functions** to measure how far off predictions are from the truth, and it iteratively updates weights using optimization algorithms like gradient descent.
+What makes these networks powerful are **activation functions**, which introduce non-linear transformations and help capture complex relationships in data. The system uses **loss functions** to measure how far off predictions are from the truth, and it iteratively updates weights using optimisation algorithms like gradient descent.
 
-Different architectures shine in different domains. **Convolutional Neural Networks (CNNs)** excel at recognizing patterns in images by preserving spatial relationships. **Recurrent Neural Networks (RNNs)** handle sequential data like time series or sentences by maintaining context over time. The latest and most transformative architecture is the **transformer**, which relies on attention mechanisms and processes data in parallel—enabling breakthroughs in natural language processing.
+Different architectures shine in different domains. **Convolutional Neural Networks (CNNs)** excel at recognising patterns in images by preserving spatial relationships. **Recurrent Neural Networks (RNNs)** handle sequential data like time series or sentences by maintaining context over time. The latest and most transformative architecture is the **transformer**, which relies on attention mechanisms and processes data in parallel—enabling breakthroughs in natural language processing.
 
 ---
 
@@ -56,15 +56,15 @@ Different architectures shine in different domains. **Convolutional Neural Netwo
 
 Large Language Models (LLMs) have changed the developer's toolkit dramatically. These models are trained on enormous volumes of text and learn to predict the next word in a sequence—a deceptively simple task that gives rise to impressive capabilities.
 
-LLMs like OpenAI's GPT series, Claude by Anthropic, or Google's Gemini can generate readable text, follow complex instructions, synthesize information, and even write or debug code. They're all based on the **transformer architecture**, which uses **attention mechanisms** to selectively focus on different parts of input text.
+LLMs like OpenAI's GPT series, Claude by Anthropic, or Google's Gemini can generate readable text, follow complex instructions, synthesise information, and even write or debug code. They're all based on the **transformer architecture**, which uses **attention mechanisms** to selectively focus on different parts of input text.
 
 The training process typically includes **pre-training** on general web and book data, followed by **fine-tuning** for specific tasks. Some models also go through **Reinforcement Learning from Human Feedback (RLHF)** to align better with human values and expectations.
 
-For developers, LLMs offer new tools for **code assistance**, helping with autocompletion, refactoring, and documentation. They also make natural language interfaces viable—whether for querying databases or generating reports. And in broader knowledge work, they assist with summarization, extraction, and even brainstorming.
+For developers, LLMs offer new tools for **code assistance**, helping with autocompletion, refactoring, and documentation. They also make natural language interfaces viable—whether for querying databases or generating reports. And in broader knowledge work, they assist with summarisation, extraction, and even brainstorming.
 
 But working with LLMs introduces a new craft: **prompt engineering**. Designing the right input becomes crucial. Techniques like few-shot prompting or chain-of-thought reasoning help guide the model to more accurate and useful results.
 
-These models aren't without flaws. They may generate **hallucinations** (confident but false information), are limited by **context windows**, and carry **knowledge cutoffs**. They can also be expensive to run and need careful evaluation before being used in critical applications.
+These models aren't without flaws. They may generate **hallucinations** (confident but false information), are limited by **context windows**, and carry **knowledge cut-offs**. They can also be expensive to run and need careful evaluation before being used in critical applications.
 
 ---
 
@@ -72,7 +72,7 @@ These models aren't without flaws. They may generate **hallucinations** (confide
 
 Computer vision enables machines to interpret visual data. At its simplest, it involves tasks like classifying an image—say, identifying whether a photo contains a dog or a cat. More advanced techniques include **object detection**, which locates items within images, and **semantic segmentation**, which assigns a label to every pixel.
 
-Technically, computer vision often relies on CNNs and benefits significantly from **transfer learning**, where a model pre-trained on a large dataset like ImageNet is fine-tuned for a more specific task. This reduces the need for large labeled datasets and training time.
+Technically, computer vision often relies on CNNs and benefits significantly from **transfer learning**, where a model pre-trained on a large dataset like ImageNet is fine-tuned for a more specific task. This reduces the need for large labelled datasets and training time.
 
 ---
 
@@ -86,7 +86,7 @@ Then comes **model selection and training**. Depending on the use case, you migh
 
 Deployment involves integrating the model into your application stack—often via APIs. Post-deployment, monitoring is essential to catch issues like data drift, model degradation, or changing real-world conditions.
 
-Throughout this cycle, **ethical considerations** must be embedded: ensuring fairness, guarding user privacy, and preparing for edge cases or unexpected behavior.
+Throughout this cycle, **ethical considerations** must be embedded: ensuring fairness, guarding user privacy, and preparing for edge cases or unexpected behaviour.
 
 ---
 
@@ -118,5 +118,7 @@ Understanding AI doesn't mean becoming a data scientist. But developers who gras
 - Communicate better with AI specialists
 
 The next post in this series dives deeper into **Large Language Models** and how they're rewriting the way we instruct computers.
+
+**What AI concept are you exploring right now?** Let me know in the comments—or tag me on X (@yourhandle) and share how AI is changing your work.
 
 
