@@ -1,6 +1,6 @@
 ---
 title: "AI Fundamentals: Core Concepts Every Developer Needs to Know"
-date: 2025-04-09
+date: 2025-04-08
 draft: false
 tags: ["AI", "Machine Learning", "Neural Networks", "NLP", "Computer Vision"]
 categories: ["AI Concepts"]
