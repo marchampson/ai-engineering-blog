@@ -36,6 +36,6 @@ As AI engineers, we need to be conscious of this limitation. Some practical take
 1. **Keep conversations focused** - Don't mix too many topics in one chat
 2. **Start fresh** when switching to a new task or topic
 3. **Use system prompts wisely** - They're part of the context budget too
-4. **Remember that AI doesn't know what to focus on** - Unlike us humans who naturally pay more attention to important things, AI models give similar weight to everything in the conversation. That's why they start mixing things up when conversations get too long or complex.
+4. **Remember that AI doesn't know what to focus on** - Unlike humans who naturally pay more attention to important things, AI models give similar weight to everything in the conversation. That's why they start mixing things up when conversations get too long or complex.
 
 Understanding these limitations helps us build better AI systems and use existing ones more effectively.
