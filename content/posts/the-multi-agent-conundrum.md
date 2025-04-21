@@ -8,7 +8,7 @@ categories: ["AI Engineering"]
 
 # The Multi-Agent Conundrum
 
-Multi-agent systems are growing in popularity as a way to improve AI task performance by dividing responsibilities between specialised roles. In this tutorial, you'll build a web-based assistant using [CrewAI](https://docs.crewai.com/) and OpenAI, wrapped in a Streamlit interface. You'll compare single-agent vs multi-agent outputs, measure token usage and cost, and generate markdown reports for easy export. This post is designed to be practical and modular—ideal for anyone experimenting with LLM-powered workflows.
+Multi-agent systems are growing in popularity as a way to improve AI task performance by dividing responsibilities between specialised roles (agents). In this tutorial, you'll build a web-based assistant using [CrewAI](https://docs.crewai.com/) and OpenAI, wrapped in a Streamlit interface. You'll compare single-agent vs multi-agent outputs, measure token usage and cost, and generate markdown reports for easy export. This post is designed to be practical and modular—ideal for anyone experimenting with LLM-powered workflows.
 
 ---
 
