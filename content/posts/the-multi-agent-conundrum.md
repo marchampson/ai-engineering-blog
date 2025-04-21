@@ -16,7 +16,7 @@ Multi-agent systems are growing in popularity as a way to improve AI task perfor
 
 Below is the complete working Streamlit app. You can copy and paste this into a file (e.g. `app.py`) and run it directly using: streamlit run app.py
 
-> **Note:** Don’t forget to create a `.env` file in the same directory as your script and add your OpenAI API key, just like in the example below.
+> **Note:** Don’t forget to create a `.env` file in the same directory as your script and add your OpenAI API key, as shown in the example below.
 
 Example:
 
