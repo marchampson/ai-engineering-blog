@@ -8,7 +8,7 @@ categories: ["AI Engineering"]
 
 # The Multi-Agent Conundrum
 
-Multi-agent systems are gaining traction as a way to improve AI task performance by dividing responsibilities between specialized roles. In this tutorial, we’ll build a web-based assistant using [CrewAI](https://crewai.com) and [OpenAI](https://openai.com), wrapped in a [Streamlit](https://streamlit.io/) interface. We'll compare single-agent vs multi-agent outputs, measure token usage and cost. Finally, we'll generate markdown reports for export. If you're experimenting with LLM-powered workflows, hopefully you'll gain some insights from this post. 
+Multi-agent systems are growing in popularity as a way to improve AI task performance by dividing responsibilities between specialised roles. In this tutorial, you'll build a web-based assistant using [CrewAI](https://docs.crewai.com/) and OpenAI, wrapped in a Streamlit interface. You'll compare single-agent vs multi-agent outputs, measure token usage and cost, and generate markdown reports for easy export. This post is designed to be practical and modular—ideal for anyone experimenting with LLM-powered workflows. Let’s get started.
 
 ---
 
@@ -16,7 +16,7 @@ Multi-agent systems are gaining traction as a way to improve AI task performance
 
 ### 1. Install Python 3.11
 
-Download from [python.org](https://www.python.org/downloads/).
+Download it from [python.org](https://www.python.org/downloads/).
 
 ### 2. Create a virtual environment
 
@@ -36,6 +36,8 @@ pip install streamlit openai crewai tiktoken python-dotenv
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 ```
+
+Make sure this file is not committed to version control by adding it to your `.gitignore`.
 
 ---
 
@@ -68,7 +70,7 @@ researcher = Agent(
 
 writer = Agent(
     role="Writer",
-    goal="Summarize clearly.",
+    goal="Summarise clearly.",
     backstory="You simplify technical insights.",
     verbose=True
 )
@@ -92,7 +94,7 @@ output1 = researcher.execute_task(task1)
 st.markdown(f"### Researcher Output\n{output1}")
 
 task2 = Task(
-    description="Summarize the findings.",
+    description="Summarise the findings.",
     agent=writer
 )
 output2 = writer.execute_task(task2)
@@ -131,7 +133,7 @@ st.markdown(f"### Single-Agent Output\n{single_output}")
 ### GPT-4-assisted analysis
 
 ```python
-def analyze_outputs(single_output, multi_output):
+def analyse_outputs(single_output, multi_output):
     comparison_prompt = f"""
     Compare the two responses:
 
@@ -146,7 +148,7 @@ def analyze_outputs(single_output, multi_output):
     )
     return analysis.choices[0].message.content.strip()
 
-analysis_result = analyze_outputs(single_output, final_output)
+analysis_result = analyse_outputs(single_output, final_output)
 st.markdown(analysis_result)
 ```
 
@@ -172,7 +174,7 @@ st.download_button("Download Analysis", analysis_result, file_name=export_filena
 
 ## Summary
 
-Using CrewAI with a multi-agent setup allows roles to specialize and hand off tasks. It adds structure, clarity, and depth compared to single-prompt responses — and it's measurable.
+Using CrewAI with a multi-agent setup allows roles to specialise and hand off tasks. This structure often improves clarity and depth — and with built-in tools for token usage, cost tracking, and AI-powered analysis, you can measure the impact directly.
 
 ---
 
