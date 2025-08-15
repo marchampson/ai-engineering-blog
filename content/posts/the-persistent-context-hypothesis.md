@@ -61,7 +61,7 @@ Each development session becomes a persistent workspace:
   "title": "Add AI Chat Integration",
   "type": "feature",
   "status": "in-progress",
-  "scope": "Kanban → Card Modal → AI Integration",
+  "scope": "Feature Module → UI Component → AI Integration",
   "risk": "medium",
   "current_task": 2,
   "assigned_agent": "feature-architect",
@@ -183,7 +183,7 @@ Here is how a real refactoring session looks.
 ```
 User: /start-session
 Agent: What type of work? → refactor
-User: Convert BriefingForm from Livewire to Vue
+User: Convert FormComponent from Livewire to Vue
 Agent: Session created: refactor-briefing-form
        Starting with laravel-researcher
 ```
@@ -194,7 +194,7 @@ Agent: Session created: refactor-briefing-form
 ## Research Complete – Handover to feature-architect
 
 **Current implementation analysis:**
-- `BriefingForm.blade.php` with Alpine.js interactions.
+- `FormComponent.blade.php` with Alpine.js interactions.
 - Livewire component handling form state.
 - Real‑time field locking via Livewire events.
 - Integration with presence system.
@@ -203,7 +203,7 @@ Agent: Session created: refactor-briefing-form
 - Maintain all existing functionality.
 - Convert to Vue 3 + Composition API.
 - Preserve real‑time collaborative features.
-- Keep integration with `CardModal.vue`.
+- Keep integration with `ParentComponent.vue`.
 
 **Next agent:** `feature-architect` should plan the Vue conversion.
 ```
@@ -214,7 +214,7 @@ Agent: Session created: refactor-briefing-form
 ## Architecture Complete – Handover to vue-developer
 
 **Vue conversion plan:**
-- Convert to `BriefingTab.vue` component.
+- Convert to `FormTab.vue` component.
 - Use a Pinia store for form state management.
 - Migrate real‑time features to Laravel Echo.
 - Maintain field locking with the presence system.
