@@ -1,71 +1,118 @@
 baseURL = "https://marchampson.me/"
 title = "Marc Hampson"
-paginate = 5
-theme = "PaperMod"
-languageCode = "en-gb"
+theme = "hugo-theme-stack"
+locale = "en-gb"
 defaultContentLanguage = "en"
+hasCJKLanguage = false
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+
+[pagination]
+  pagerSize = 5
 
 [minify]
   disableXML = true
   minifyOutput = true
 
 [params]
-  env = "production"
-  title = "Marc Hampson"
+  # Limit homepage/section listings to the posts/ section
+  mainSections = ["posts"]
   description = "Diary of an AI Orchestrator — thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
   keywords = ["AI", "Software Engineering", "Machine Learning", "LLMs"]
-  author = "Marc Hampson"
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  comments = false
-  hidemeta = false
-  hideSummary = false
-  showtoc = true
-  tocopen = false
 
-[params.homeInfoParams]
-  Title = "Diary of an AI Orchestrator"
-  Content = "Thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
+  [params.footer]
+    since = 2025
+    customText = ""
 
-[params.assets]
-  favicon = "/favicon.ico"
-  favicon16x16 = "/favicon-16x16.png"
-  favicon32x32 = "/favicon-32x32.png"
-  apple_touch_icon = "/apple-touch-icon.png"
+  [params.sidebar]
+    compact = false
+    avatar = "img/avatar.svg"
+    subtitle = "Diary of an AI Orchestrator — thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
 
-#[[params.socialIcons]]
-#  name = "linkedin"
-#  url = "https://www.linkedin.com/in/marc-hampson-4a86281/"
+  [params.article]
+    headingAnchor = true
+    math = false
+    toc = true
+    readingTime = true
 
-#[[params.socialIcons]]
-#  name = "github"
-#  url = "https://github.com/marchampson"
+    [params.article.license]
+      enabled = false
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.comments]
+    enabled = false
+
+# Sidebar homepage widgets
+[[params.widgets.homepage]]
+  type = "search"
+
+[[params.widgets.homepage]]
+  type = "archives"
+  [params.widgets.homepage.params]
+    limit = 5
+
+[[params.widgets.homepage]]
+  type = "categories"
+  [params.widgets.homepage.params]
+    limit = 10
+
+[[params.widgets.homepage]]
+  type = "tag-cloud"
+  [params.widgets.homepage.params]
+    limit = 10
+
+[[params.widgets.page]]
+  type = "toc"
+
+# Social links (shown in the sidebar)
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/marchampson"
+  [menu.social.params]
+    icon = "brand-github"
+
+[[menu.social]]
+  identifier = "linkedin"
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/marc-hampson-4a86281/"
+  [menu.social.params]
+    icon = "brand-linkedin"
+
+# Main menu (shown in the sidebar)
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = -100
+  [menu.main.params]
+    icon = "home"
 
 [[menu.main]]
   identifier = "categories"
   name = "Categories"
   url = "/categories/"
   weight = 10
+  [menu.main.params]
+    icon = "categories"
 
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
   url = "/tags/"
   weight = 20
+  [menu.main.params]
+    icon = "tag"
 
 [[menu.main]]
   identifier = "about"
   name = "About"
   url = "/about/"
   weight = 30
+  [menu.main.params]
+    icon = "user"
