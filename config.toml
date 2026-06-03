@@ -28,7 +28,7 @@ buildExpired = false
 
   [params.sidebar]
     compact = false
-    avatar = "img/avatar.svg"
+    avatar = "img/avatar.jpeg"
     subtitle = "Diary of an AI Orchestrator"
 
   [params.article]
