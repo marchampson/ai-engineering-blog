@@ -29,7 +29,7 @@ buildExpired = false
   [params.sidebar]
     compact = false
     avatar = "img/avatar.svg"
-    subtitle = "Diary of an AI Orchestrator — thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
+    subtitle = "Diary of an AI Orchestrator"
 
   [params.article]
     headingAnchor = true
