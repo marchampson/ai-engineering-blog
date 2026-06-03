@@ -1,5 +1,5 @@
 baseURL = "https://marchampson.me/"
-title = "AI Engineering Insights"
+title = "Marc Hampson"
 paginate = 5
 theme = "PaperMod"
 languageCode = "en-gb"
@@ -15,8 +15,8 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "AI Engineering Insights"
-  description = "Exploring the evolution of software development in the age of AI"
+  title = "Marc Hampson"
+  description = "Diary of an AI Orchestrator — thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
   keywords = ["AI", "Software Engineering", "Machine Learning", "LLMs"]
   author = "Marc Hampson"
   DateFormat = "January 2, 2006"
@@ -33,6 +33,10 @@ buildExpired = false
   hideSummary = false
   showtoc = true
   tocopen = false
+
+[params.homeInfoParams]
+  Title = "Diary of an AI Orchestrator"
+  Content = "Thoughts, experiments and lessons from a software developer navigating the shift from writing code to directing teams of AI agents."
 
 [params.assets]
   favicon = "/favicon.ico"
